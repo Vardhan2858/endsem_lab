@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 20px;
+      background: #1bb8df;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background: #f68888;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .marks-box, .notify-box {
+      height: 200px;
+      overflow-y: auto;
+    }
+
+    .course-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .course-table th, .course-table td {
+      border-bottom: 1px solid #37f914;
+      padding: 6px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Dashboard</h1>
+
+  <div class="dashboard">
+    
+   
+    <div class="box">
+      <h2>Courses</h2>
+      <table class="course-table">
+        <tr><th>Course</th><th>Code</th></tr>
+        <tr><td>Data Structures</td><td>M101</td></tr>
+        <tr><td>Object oriented programing</td><td>S102</td></tr>
+        <tr><td>Mathematical optimization</td><td>E103</td></tr>
+        <tr><td>Frontend development framework</td><td>E103</td></tr>
+      </table>
+    </div>
+
+    <div>
+     
+      <div class="box marks-box">
+        <h2>Marks</h2>
+        <p>Data Structures: 92</p>
+        <p>Object oriented programing: 93</p>
+        <p>Mathematical optimization: 95</p>
+        <p>Frontend development framework: 96</p>
+      </div>
+
+      <div class="box notify-box" style="margin-top: 20px;">
+        <h2>Notifications</h2>
+        <p>Assignment due tomorrow</p>
+        <p>Exam on Monday</p>
+        <p>Holiday on Friday</p>
+        <p>Student passed all the subjects</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
